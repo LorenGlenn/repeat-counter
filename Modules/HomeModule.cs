@@ -17,7 +17,7 @@ namespace WordCounter
         RepeatCounter newCounter = new RepeatCounter(inputSentence, inputWordToSearch);
         int result = newCounter.CountRepeats();
         return View["result.cshtml", result];
-      }
+      };
     }
   }
 }
