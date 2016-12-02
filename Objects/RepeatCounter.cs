@@ -42,7 +42,15 @@ namespace WordCounter.Objects
 
     public int CountRepeats()
     {
-
+      int totalCount = 0;
+      for (int i =0; i < _splitSentence.Length; i++)
+      {
+        if(_splitSentence[i] == _userWordToSearch)
+        {
+          totalCount += 1;
+        }
+      }
+      return totalCount;
     }
   }
 }
