@@ -32,5 +32,10 @@ namespace WordCounter.Objects
     {
       _userWordToSearch = newWordToSearch;
     }
+
+    public int CountRepeats()
+    {
+      return 5;
+    }
   }
 }
