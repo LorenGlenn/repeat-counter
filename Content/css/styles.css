@@ -1,0 +1,37 @@
+body{
+  background-color: darkgrey;
+}
+.container {
+  text-align: center;
+}
+
+.form-group{
+  margin-bottom: 50px;
+}
+
+.jumbotron {
+  background-color: lightblue;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+form {
+  border: 2px solid black;
+  padding-bottom: 20px;
+  background-color: papayawhip;
+  border-radius: 10px;
+}
+
+.result {
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: papayawhip;
+  margin-top: 20%;
+  margin-bottom: 5%;
+}
+
+.count {
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 5%;
+}

@@ -3,16 +3,28 @@
   <head>
     <title></title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/styles.css" type="text/css">
+    <link rel="stylesheet" href="/Content/css/styles.css" type="text/css">
   </head>
   <body>
-    <h3>Welcome to the Repeat Counter</h3>
-    <form action="/count" method="post">
-      <label for="sentence">Enter a sentence:</label>
-      <input type="text" name="sentence">
-      <label for="word">Enter a word to see how often it appears in your sentence:</label>
-      <input type="text" name="word">
-      <button type="submit">Submit</button>
-    </form>
+    <div class="container">
+      <div class="jumbotron">
+        <h2>Welcome to the Repeat Counter!</h2>
+        <h4>This is an application that will count the occurrences of a word in any sentence you choose!</h4>
+      </div>
+      <form action="/count" method="post">
+        <div class="form-group">
+          <h4>First -</h4>
+          <label for="sentence">Enter a sentence:</label><br>
+          <input type="text" name="sentence">
+        </div>
+        <div class="form-group">
+          <h4>Then -</h4>
+          <label for="word">Enter a word to see how often it appears in your sentence:</label><br>
+          <input type="text" name="word">
+        </div>
+        <h4>Now hit the button to count!</h4>
+        <button type="submit" class="btn btn-info">Count</button>
+      </form>
+    </div>
   </body>
 </html>
