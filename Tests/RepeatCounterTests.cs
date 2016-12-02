@@ -7,6 +7,10 @@ namespace RepeatCounterTests
   {
     [Theory]
     [InlineData("a", "a", 1)]
+    [InlineData("apple", "apple", 1)]
+    [InlineData("an apple", "apple", 1)]
+    [InlineData("the big red apple was big", "big", 2)]
+    // [InlineData("apple", "apple", 1)]
 
     public void Test1_TestRepeatCounterMethod_True(string testSentence, string testWordToSearch, int expectedCount)
     {
