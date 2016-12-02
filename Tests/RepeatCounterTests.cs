@@ -10,7 +10,7 @@ namespace RepeatCounterTests
     [InlineData("apple", "apple", 1)]
     [InlineData("an apple", "apple", 1)]
     [InlineData("the big red apple was big", "big", 2)]
-    // [InlineData("apple", "apple", 1)]
+    [InlineData("the Big rEd BIG apPle was bIg", "big", 3)]
 
     public void Test1_TestRepeatCounterMethod_True(string testSentence, string testWordToSearch, int expectedCount)
     {

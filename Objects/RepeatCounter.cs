@@ -10,8 +10,8 @@ namespace WordCounter.Objects
 
     public RepeatCounter(string inputSentence, string inputWordToSearch)
     {
-      _userSentence = inputSentence;
-      _userWordToSearch = inputWordToSearch;
+      _userSentence = inputSentence.ToLower();
+      _userWordToSearch = inputWordToSearch.ToLower();
       SplitSentence();
     }
 
