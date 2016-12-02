@@ -2,13 +2,15 @@
 <html>
   <head>
     <title></title>
-    <link rel="stylesheet" href="/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/styles.css" type="text/css">
   </head>
   <body>
-    <h3>Welcome to the Weekday Finder</h3>
-    <form action="/find-weekday" method="post">
-      <label for="date">Enter a date in this format "mm/dd/yyyy"</label>
+    <h3>Welcome to the Repeat Counter</h3>
+    <form action="/count" method="post">
+      <label for="date">Enter a sentence:</label>
+      <input type="text" name="date">
+      <label for="date">Enter a word to see how often it appears in your sentence:</label>
       <input type="text" name="date">
       <button type="submit">Submit</button>
     </form>
